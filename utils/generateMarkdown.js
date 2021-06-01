@@ -20,7 +20,7 @@ function generateMarkdown(data) {
   return `# ${data.title}
 
   ${renderLicenseBadge(data.license)}
-  
+
   ## Description
   ${data.desc}
 
@@ -51,6 +51,8 @@ function generateMarkdown(data) {
   ## Questions
   GitHub: ${data.githubUser}
   ${gitLink(data.githubUser)}
+
+  Send me an Email: [${data.email}](mailto:${data.email})
 `;
 }
 
