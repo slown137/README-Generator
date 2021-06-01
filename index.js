@@ -46,7 +46,6 @@ const questions = [
         choices: [
             'Apache License 2.0',
             'MIT License',
-            'GNU General Public License v2.0',
             'GNU General Public License v3.0',
             'BSD 2-clause "Simplified" license',
             'BSD 3-clause "New" or "Revised" license'
@@ -61,6 +60,11 @@ const questions = [
         type: 'input',
         name: 'email',
         message: 'What is your email?'
+    },
+    {
+        type: "input",
+        name: "name",
+        message: "What is your full name?"
     }
 ];
 
