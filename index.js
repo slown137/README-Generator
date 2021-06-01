@@ -45,7 +45,7 @@ const questions = [
         message: "Choose a license",
         choices: [
             'Apache License 2.0',
-            'MIT',
+            'MIT License',
             'GNU General Public License v2.0',
             'GNU General Public License v3.0',
             'BSD 2-clause "Simplified" license',

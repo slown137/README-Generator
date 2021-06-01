@@ -1,14 +1,29 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(data) {
+  if (data.license === 'Apache License 2.0') {
+    return "<a href=https://www.apache.org/licenses/LICENSE-2.0><img src=\"https://img.shields.io/badge/License-Apache%202.0-green\">"
+  } else if (data.license === "MIT License") {
+    return "<a href=https://www.apache.org/licenses/LICENSE-2.0><img src=\"https://img.shields.io/badge/License-MIT%202.0-green\">"
+  } else if (data.license === "GNU General Public License v2.0") {
+    return "<a href=https://www.apache.org/licenses/LICENSE-2.0><img src=\"https://img.shields.io/badge/License-GNUGPLv2%202.0-green\">"
+  } else if (data.license === "GNU General Public License v3.0") {
+    return "<a href=https://www.apache.org/licenses/LICENSE-2.0><img src=\"https://img.shields.io/badge/License-GNUGPLv3%202.0-green\">"
+  } else if (data.license === "BSD 2-clause \"Simplified\" license") {
+    return "<a href=https://www.apache.org/licenses/LICENSE-2.0><img src=\"https://img.shields.io/badge/License-BSD2Clause%202.0-green\">"
+  } else if (data.license === "BSD 3-clause \"New\" or \"Revised\" license") {
+    return "<a href=https://www.apache.org/licenses/LICENSE-2.0><img src=\"https://img.shields.io/badge/License-BSD3Clause%202.0-green\">"
+  }
+
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(data) {}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(data) {}
 
 
 function gitLink(username) {
